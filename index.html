@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Jogo da Cobra</h1>
+        
+        <div class="game-info">
+            <div class="score">
+                <span>Pontuação:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="high-score">
+                <span>Melhor Score:</span>
+                <span id="highScore">0</span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn btn-start">Iniciar Jogo</button>
+            <button id="pauseBtn" class="btn btn-pause" disabled>Pausar</button>
+            <button id="resetBtn" class="btn btn-reset">Reiniciar</button>
+        </div>
+        
+        <div class="instructions">
+            <h2>Como Jogar:</h2>
+            <ul>
+                <li>Use as <strong>setas do teclado</strong> ou <strong>WASD</strong> para mover a cobra</li>
+                <li>Coma a comida vermelha para crescer e ganhar pontos</li>
+                <li>Evite colidir com as paredes e com você mesmo</li>
+                <li>Cada comida = +10 pontos</li>
+            </ul>
+        </div>
+        
+        <div class="game-status" id="gameStatus"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
